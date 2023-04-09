@@ -1,0 +1,5 @@
+# must be ended with a new line "LF" (Unix) and not "CRLF" (Windows)
+* * * * * /usr/local/bin/python3 /app/bib_crawler.py >> /app/cron.log 2>&1 && curl -fsS --retry 5 -o /dev/null https://hc-ping.com/0c4fd7f5-a015-4b6c-9d09-8f94b998d3b1
+* * * * * /usr/local/bin/python3 /app/weather_crawler.py >> /app/cron.log 2>&1 && curl -fsS --retry 5 -o /dev/null https://hc-ping.com/64e42f1c-db12-40ce-b6be-0fb3bb1b7593
+# An empty line is required at the end of this file for a valid cron file.
+
